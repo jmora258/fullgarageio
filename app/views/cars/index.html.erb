@@ -1,0 +1,28 @@
+<h2>The Garage</h2> 
+
+	<hr > 
+
+<table class='table'>
+	<tr> 
+		<td>Description</td>
+		<td>Name</td>
+		<td>Color</td>
+		<td>Mileage</td>
+		<td>Owner</td>
+		<td>Actions</td>
+	</tr>  
+	<tr> 
+		<% @cars.each do |car| %> 
+		<tr> 
+			<td><%= car.year %> <%= car.make %> <%= car.model %></td> 
+			<td><%= car.name %></td>
+			<td><%= car.color %></td>
+			<td><%= car.mileage %></td>
+			<td> owner's name </td> 
+			<td> actions go here </td> 
+		</tr> 
+		<% end %>  
+	</tr> 
+
+
+</table> 
