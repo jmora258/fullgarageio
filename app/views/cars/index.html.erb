@@ -19,7 +19,7 @@
 			<td><%= car.color %></td>
 			<td><%= car.mileage %></td>
 			<td> owner's name </td> 
-			<td> actions go here </td> 
+			<td> <%= link_to "Show", "/cars/show/#{car.id}", class="btn btn-primary" %></td> 
 		</tr> 
 		<% end %>  
 	</tr> 
